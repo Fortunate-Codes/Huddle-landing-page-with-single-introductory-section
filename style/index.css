@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("/images/bg-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    width: 80%;
+    height: 100%;
+}
+
+.branding{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+.branding img:nth-child(1){
+    margin-bottom: 30px;
+}
+.hero{
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 255px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero h2{
+    font-size: 23px;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 20px;
+    font-family:'Poppins', sans-serif ;
+}
+.hero > button{
+    width: 100%;
+    max-width: 180px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+    color: hsl(257, 40%, 49%);
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .8s;
+}
+
+.hero > button:hover{
+    border: hsl(300, 69%, 71%);
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.socials{
+    margin: 30px auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.socials i{
+    border: 1px solid #fff;
+    padding: 5px 5px;
+    border-radius: 30px;
+    color: #fff;
+    margin: 0 5px;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.socials i:hover{
+    border: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+footer {
+  position: absolute;
+  left: 100px;
+  bottom: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        background-image: url("/images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    .branding img:nth-child(2){
+        margin-top: 30px;
+        width: 550px;
+    }
+    .hero{
+        position: relative;
+        top: 120px;
+        right: 150px;
+        text-align: left;
+        width: 100%;
+    }
+    .hero p{
+        width: 109%;
+        font-size: 12px;
+    }
+    .socials{
+        position: absolute;
+        bottom: 0px;
+        right: -550px;
+    }
+}
